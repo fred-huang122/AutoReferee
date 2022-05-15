@@ -37,6 +37,7 @@ dependencies {
 
     implementation project(':moduli-record')
     implementation project(':moduli-autoreferee')
+    runtimeOnly project(':moduli-autoreferee-ci')
     runtimeOnly project(':moduli-wp')
     runtimeOnly project(':moduli-referee')
 

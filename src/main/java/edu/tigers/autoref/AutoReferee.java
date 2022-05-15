@@ -39,9 +39,9 @@ public final class AutoReferee
 
 		ifHasOption("h", () -> printHelp(options));
 		ifNotHasOption("hl", () -> SwingUtilities.invokeLater(AutoReferee::startUi));
-		  
+
 		start();
-		
+
 		ifHasOption("a", AutoReferee::activateAutoRef);
 	}
 
@@ -83,6 +83,7 @@ public final class AutoReferee
 		options.addOption("hl", "headless", false, "run without a UI");
 		options.addOption("a", "active", false, "Start autoRef in active mode");
 		options.addOption("w", "window", true, "Set window size (example: 1920x1080)");
+		options.addOption("c", "ci", false, "Enable CI mode");
 		return options;
 	}
 
@@ -117,7 +118,8 @@ public final class AutoReferee
 
 	private static void start()
 	{
-		SumatraModel.getInstance().setCurrentModuliConfig("moduli.xml");
+		String config = cmd.hasOption("c") ? "moduli-ci.xml" : "moduli.xml";
+		SumatraModel.getInstance().setCurrentModuliConfig(config);
 		try
 		{
 			SumatraModel.getInstance().loadModulesOfConfigSafe(SumatraModel.getInstance().getCurrentModuliConfig());

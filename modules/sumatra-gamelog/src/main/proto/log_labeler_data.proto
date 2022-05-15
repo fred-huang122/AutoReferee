@@ -1,7 +1,8 @@
 syntax = "proto3";
+
 option java_package = "edu.tigers.sumatra.gamelog.proto";
 
-import "messages_robocup_ssl_wrapper.proto";
+import "ssl_vision_wrapper.proto";
 import "ssl_gc_referee_message.proto";
 
 message LabelerMetadata {
@@ -15,7 +16,7 @@ message LabelerFrame {
   uint64 timestamp = 1;
   oneof frame {
     SSL_WrapperPacket vision_frame = 2;
-    edu.tigers.sumatra.referee.proto.Referee referee_frame = 3;
+    Referee referee_frame = 3;
   }
 }
 

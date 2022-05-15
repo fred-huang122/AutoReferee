@@ -6,7 +6,7 @@ package edu.tigers.sumatra.cam;
 import com.github.g3force.configurable.ConfigRegistration;
 import edu.tigers.moduli.exceptions.ModuleNotFoundException;
 import edu.tigers.sumatra.cam.data.CamGeometry;
-import edu.tigers.sumatra.cam.proto.MessagesRobocupSslWrapper.SSL_WrapperPacket;
+import edu.tigers.sumatra.cam.proto.SslVisionWrapper.SSL_WrapperPacket;
 import edu.tigers.sumatra.gamelog.SSLGameLogReader;
 import edu.tigers.sumatra.gamelog.SSLGameLogReader.SSLGameLogfileEntry;
 import edu.tigers.sumatra.model.SumatraModel;

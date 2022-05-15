@@ -5,7 +5,7 @@ package edu.tigers.sumatra.gamelog;
 
 import com.google.common.primitives.Bytes;
 import com.google.protobuf.AbstractMessage;
-import edu.tigers.sumatra.cam.proto.MessagesRobocupSslWrapper.SSL_WrapperPacket;
+import edu.tigers.sumatra.cam.proto.SslVisionWrapper.SSL_WrapperPacket;
 import edu.tigers.sumatra.gamelog.proto.LogLabelerData;
 import edu.tigers.sumatra.referee.proto.SslGcRefereeMessage.Referee;
 import org.apache.logging.log4j.LogManager;
