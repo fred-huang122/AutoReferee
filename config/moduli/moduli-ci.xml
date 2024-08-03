@@ -7,7 +7,7 @@
 
     <globalConfiguration>
         <environment>ROBOCUP</environment>
-        <geometry>DIV_A</geometry>
+        <geometry>DIV_B</geometry>
     </globalConfiguration>
 
 
